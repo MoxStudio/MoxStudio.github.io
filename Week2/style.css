@@ -1,0 +1,49 @@
+
+body {
+    background-color: darkblue;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    color: gold;
+}
+
+.question {
+    background-color: navy;
+    border: 2px solid gold;
+    padding: 20px;
+    margin: 30px auto;
+    width: 60%;
+}
+
+a {
+    display: block;
+    background-color: royalblue;
+    color: white;
+    padding: 12px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: orange;
+}
+
+.screen {
+    display: none;
+}
+
+#start {
+    display: block;
+}
+
+.screen:target {
+    display: block;
+}
+
+body:has(.screen:target) #start {
+    display: none;
+}

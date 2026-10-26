@@ -1,34 +1,59 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>AME 220 - Week 2 Homework</title>
+    <title>Millionaire Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>My Developer Portfolio</h1>
+    <h1>Who Wants to Be a Millionaire?</h1>
+    <p>Answer 3 questions to win $1,000,000!</p>
 
-    <section class="about">
-        <h2 id="about-title">About Me</h2>
-        <p id="about-description">
-            I am an Informatics student at Arizona State
-            University with an interest in software
-            engineering and artificial intelligence.
-        </p>
-    </section>
+    <div id="start" class="screen question">
+        <h2>Welcome to the Game!</h2>
+        <a href="#q1">Start Game</a>
+    </div>
 
-    <section class="projects">
-        <h2 id="projects-title">My Projects</h2>
-        <p id="projects-description">
-            I enjoy building software applications,
-            exploring AI technologies, and working
-            on full-stack development projects.
-        </p>
-    </section>
+    <div id="q1" class="screen question">
+        <h2>Question 1 - $100</h2>
+        <p>What does HTML stand for?</p>
 
-    <a href="https://github.com/MoxStudio">
-        Visit My GitHub
-    </a>
+        <a href="#wrong">A. High Tech Machine Language</a>
+        <a href="#q2">B. HyperText Markup Language</a>
+        <a href="#wrong">C. Home Tool Markup Language</a>
+    </div>
+
+    <div id="q2" class="screen question">
+        <h2>Question 2 - $10,000</h2>
+        <p>What is the capital of France?</p>
+
+        <a href="#wrong">A. London</a>
+        <a href="#wrong">B. Berlin</a>
+        <a href="#q3">C. Paris</a>
+    </div>
+
+    <div id="q3" class="screen question">
+        <h2>Question 3 - $1,000,000</h2>
+        <p>Which planet is known as the Red Planet?</p>
+
+        <a href="#win">A. Mars</a>
+        <a href="#wrong">B. Venus</a>
+        <a href="#wrong">C. Jupiter</a>
+    </div>
+
+    <div id="wrong" class="screen question">
+        <h2>Wrong Answer!</h2>
+        <p>Game Over!</p>
+        <a href="#start">Try Again</a>
+    </div>
+
+    <div id="win" class="screen question">
+        <h2>Congratulations!</h2>
+        <h1>You Won $1,000,000!</h1>
+        <a href="#start">Play Again</a>
+    </div>
 
 </body>
 </html>
