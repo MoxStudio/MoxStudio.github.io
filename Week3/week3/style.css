@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;600;700&family=Lato:wght@400&display=swap');
+
+/* Page Background */
+body {
+    background-color: #334139;
+    background:
+        radial-gradient(circle, transparent 20%, #334139 20%, #334139 80%, transparent 80%, transparent),
+        radial-gradient(circle, transparent 20%, #334139 20%, #334139 80%, transparent 80%, transparent) 25px 25px,
+        linear-gradient(#D7BE82 2px, transparent 2px) 0 -1px,
+        linear-gradient(90deg, #D7BE82 2px, #334139 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+    color: #334139;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    background-color: #A7BED3;
+    border-radius: 12px;
+}
+
+/* Main Title */
+h1 {
+    font-family: 'Arvo', serif;
+    color: #334139;
+    text-shadow: 2px 2px 3px #D7BE82;
+}
+
+.intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* About Me */
+.about-me {
+    background-color: #D7BE82;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.about-me h2 {
+    font-family: 'Arvo', serif;
+}
+
+.about-me p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Hobbies */
+.hobbies {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.hobby-card {
+    background-color: #D7BE82;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #334139;
+}
+
+.hobby-card h3 {
+    font-family: 'Arvo', serif;
+}
+
+/* Education */
+.education {
+    background-color: #D7BE82;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.education h2 {
+    font-family: 'Arvo', serif;
+}
+
+/* Movie Cards */
+.movies {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.movie-card {
+    background-color: #D7BE82;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #334139;
+}
+
+/* Movie Posters */
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Movie Titles */
+.movie-card h2 {
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+}
+
+/* Movie Descriptions */
+.movie-card p {
+    font-size: 15px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    font-size: 13px;
+}
